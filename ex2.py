@@ -34,6 +34,16 @@ def calcularAproveitamento(tentativas):
     taxaDeAproveitamento = (arremessosConvertidos/10) * 100
     
     print(f"Taxa de aproveitamento: {taxaDeAproveitamento}%")
+
+def encontrarCestaMaisFrequente(tentativas):
+    contagem = [0,0,0,0]
+    for arremessos in tentativas:
+        contagem[arremessos] += 1
+    for i in range(10):
+        if contagem
+
+
+
     
 arremessos=registrarTentativas()
 
