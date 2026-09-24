@@ -37,10 +37,16 @@ def calcularAproveitamento(tentativas):
 
 def encontrarCestaMaisFrequente(tentativas):
     contagem = [0,0,0,0]
+    tempMaior = 0
+    maior = 0
     for arremessos in tentativas:
         contagem[arremessos] += 1
-    for i in range(10):
-        if contagem
+    for i in range(4):
+        if contagem[i] > tempMaior:
+            tempMaior = contagem[i]
+            maior = i
+
+    print(f"Tipo de arremesso mais frequente: {maior} pontos")
 
 
 
@@ -48,3 +54,5 @@ def encontrarCestaMaisFrequente(tentativas):
 arremessos=registrarTentativas()
 
 print(calcularPontuacao(arremessos))
+encontrarCestaMaisFrequente(arremessos)
+3
